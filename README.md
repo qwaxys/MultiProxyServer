@@ -11,10 +11,18 @@ Current supported protocols:
 *note: without client authentication works, I haven't tested the other ones.
 You will need to add the correct certificates.
 
-Config
+Useages and configuration
 -------
+there are ony 2 commands:
+ * reload - this will reload the configuration file.
+ * quit - exit the program.
+ 
+When you run the program for the first time a config wil be generated in the same directory.
+You can also start with the config as a parameter. Example:
 
-todo
+	MultiProxy.exe C:\someDir\aConfigFile.xml
+
+
 
 Special Thanks
 -------
