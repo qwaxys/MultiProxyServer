@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<mcvhosts>
+<multiproxyserver>
   <port>1212</port>
   <endpoint>0.0.0.0</endpoint>
-  <motd>A Minecraft Proxy Test</motd>
-  <pingremote>false</pingremote>
+  <motd>A Minecraft Proxy</motd>
+  <pingremote>true</pingremote>
+  <usersinmotd>true</usersinmotd>
   <vhosts>
-    <vhost host="localhost" destination="localhost:25565" />
+    <vhost host="example.com" destination="localhost:25565" />
+	<vhost host="test.example.com" destination="localhost:25569" />
     <default destination="localhost:25565"></default>
   </vhosts>
-  <webserver>www.ikdoeict.be:80</webserver>
+  <webserver>qwaxys-mini:80</webserver>
   <ircserver>irc.kreynet.org:6667</ircserver>
-</mcvhosts>
+</multiproxyserver>
