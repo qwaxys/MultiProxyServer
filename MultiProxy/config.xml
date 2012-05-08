@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mcvhosts>
+  <port>1212</port>
+  <endpoint>0.0.0.0</endpoint>
+  <motd>A Minecraft Proxy Test</motd>
+  <pingremote>false</pingremote>
+  <vhosts>
+    <vhost host="localhost" destination="localhost:25565" />
+    <default destination="localhost:25565"></default>
+  </vhosts>
+  <webserver>www.ikdoeict.be:80</webserver>
+  <ircserver>irc.kreynet.org:6667</ircserver>
+</mcvhosts>
