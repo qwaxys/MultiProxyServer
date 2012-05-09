@@ -64,5 +64,5 @@ ircserver: The IRC server. Defaults to "localhost", the port defaults to 6667.
 
 Special Thanks
 -------
- * [the Minecraft Coalition wiki] (http://mc.kev009.com/Protocol)
+ * [the Minecraft Coalition wiki] (http://mc.kev009.com/Protocol) for the info.
  * [Drew DeVault] (https://github.com/SirCmpwn) because MultiProxyServer is based on my improved version of [MCVHost] (https://github.com/SirCmpwn/MCVHost).
