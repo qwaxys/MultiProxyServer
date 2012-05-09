@@ -44,13 +44,19 @@ Configuration
 port: The proxyserver wil be listening on this port. Defaults to 25565
 
 motd: The message of the day is the same for each server. Defaults to "A Minecraft Proxy".
+
 pingremote: If enabled the playercount and max player will be the sum of vhosts. Defaults to false.
+
 usersinmotd: If enabled the motd will be appended with a list of all servers and the amount of players, example: "A Minecraft Proxy Servername (3/20) ServernameTwo (1/20)".
+
 vhosts: A list of virtual servers.
+
 vhost: A virtual server, host is the address that a client connects to, destination is where the server actualy runs. The port number is optional.
 
 webserver: The webserver to where all requests are forwarded. You don't need to add virtual hosts here, the webserver should handle that.
+
 Defaults to "localhost", the port defaults to 80.
+
 When a browsers connects using HTTPS then the proxy will allways use 443.
 
 ircserver: The IRC server. Defaults to "localhost", the port defaults to 6667.
