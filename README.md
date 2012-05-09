@@ -9,7 +9,8 @@ Current supported protocols:
  * HTTPS*
  
 *note: without client authentication works, I haven't tested the other ones.
-You will need to add the correct certificates.
+
+You will also need to add the correct certificates.
 
 Usage
 -------
