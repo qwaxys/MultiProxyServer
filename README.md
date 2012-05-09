@@ -12,6 +12,12 @@ Current supported protocols:
 
 You will also need to add the correct certificates.
 
+Why?
+-------
+ * Some internet providers block certain ports.
+ * Corporations/organisations have a firewall, running everything on 80 or 443 might fix this.
+ * ...
+
 Usage
 -------
 there are ony 2 commands:
