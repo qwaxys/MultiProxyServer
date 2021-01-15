@@ -47,7 +47,7 @@ Just use a [DNS SRV record](https://en.wikipedia.org/wiki/SRV_record#cite_note-7
 		<vhost host="alpha.example.com" destination="localhost" />
 		<default destination="localhost:25565"></default>
 	  </vhosts>
-	  <webserver>qwaxys-mini:80</webserver>
+	  <webserver>qyour-site.tld:80</webserver>
 	  <ircserver>irc.kreynet.org:6667</ircserver>
 	</multiproxyserver>
 	
