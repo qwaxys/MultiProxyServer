@@ -1,35 +1,38 @@
-MultiProxyServer
+
+~~MultiProxyServer~~
 =============
 
-A proxy that not only let you run multiple virtual Minecraft servers but can also handle different protocols all of which on one port.
-Current supported protocols:
- * Minecraft
- * IRC (unencrypted)
- * HTTP
- * HTTPS*
+Just use a [DNS SRV record](https://en.wikipedia.org/wiki/SRV_record#cite_note-7) instead.
+
+~~A proxy that not only let you run multiple virtual Minecraft servers but can also handle different protocols all of which on one port.~~
+~~Current supported protocols:~~
+ * ~~Minecraft~~
+ * ~~IRC (unencrypted)~~
+ * ~~HTTP~~
+ * ~~HTTPS~~*
  
-*note: without client authentication works, I haven't tested the other ones.
+~~*note: without client authentication works, I haven't tested the other ones.~~
 
-You will also need to add the correct certificates.
+~~You will also need to add the correct certificates.~~
 
-Why?
+~~Why?~~
 -------
- * Some internet providers block certain ports.
- * Corporations/organisations have a firewall, running everything on 80 or 443 might fix this.
+ * ~~Some internet providers block certain ports.~~
+ * ~~Corporations/organisations have a firewall, running everything on 80 or 443 might fix this.~~
  * ...
 
-Usage
+~~Usage~~
 -------
-there are ony 2 commands:
- * reload - this will reload the configuration file.
- * quit - exit the program.
+~~there are ony 2 commands:~~
+ * ~~reload - this will reload the configuration file.~~
+ * ~~quit - exit the program.~~
  
-When you run the program for the first time a config wil be generated in the same directory.
-You can also start with the config as a parameter. Example:
+~~When you run the program for the first time a config wil be generated in the same directory.~~
+~~You can also start with the config as a parameter. Example:~~
 
 	MultiProxy.exe C:\someDir\aConfigFile.xml
 
-Configuration
+~~Configuration~~
 -------
 	<?xml version="1.0" encoding="utf-8" ?>
 	<multiproxyserver>
@@ -48,27 +51,27 @@ Configuration
 	  <ircserver>irc.kreynet.org:6667</ircserver>
 	</multiproxyserver>
 	
-port: The proxyserver wil be listening on this port. Defaults to 25565
+~~port: The proxyserver wil be listening on this port. Defaults to 25565~~
 
-motd: The message of the day is the same for each server. Defaults to "A Minecraft Proxy".
+~~motd: The message of the day is the same for each server. Defaults to "A Minecraft Proxy".~~
 
-pingremote: If enabled the playercount and max player will be the sum of vhosts. Defaults to false.
+~~pingremote: If enabled the playercount and max player will be the sum of vhosts. Defaults to false.~~
 
-usersinmotd: If enabled the motd will be appended with a list of all servers and the amount of players, example: "A Minecraft Proxy Servername (3/20) ServernameTwo (1/20)".
+~~usersinmotd: If enabled the motd will be appended with a list of all servers and the amount of players, example: "A Minecraft Proxy Servername (3/20) ServernameTwo (1/20)".~~
 
-vhosts: A list of virtual servers.
+~~vhosts: A list of virtual servers.~~
 
-vhost: A virtual server, host is the address that a client connects to, destination is where the server actualy runs. The port number is optional.
+~~vhost: A virtual server, host is the address that a client connects to, destination is where the server actualy runs. The port number is optional.~~
 
-webserver: The webserver to where all requests are forwarded. You don't need to add virtual hosts here, the webserver should handle that.
+~~webserver: The webserver to where all requests are forwarded. You don't need to add virtual hosts here, the webserver should handle that.~~
 
-Defaults to "localhost", the port defaults to 80.
+~~Defaults to "localhost", the port defaults to 80.~~
 
-When a browsers connects using HTTPS then the proxy will allways use 443.
+~~When a browsers connects using HTTPS then the proxy will allways use 443.~~
 
-ircserver: The IRC server. Defaults to "localhost", the port defaults to 6667.
+~~ircserver: The IRC server. Defaults to "localhost", the port defaults to 6667.~~
 
-Special Thanks
+~~Special Thanks~~
 -------
- * [the Minecraft Coalition wiki] (http://mc.kev009.com/Protocol) for the info.
- * [Drew DeVault] (https://github.com/SirCmpwn) because MultiProxyServer is based on my improved version of [MCVHost] (https://github.com/SirCmpwn/MCVHost).
+ * [the Minecraft Coalition wiki](http://mc.kev009.com/Protocol) for the info.
+ * [Drew DeVault](https://github.com/SirCmpwn) because MultiProxyServer is based on my improved version of [MCVHost](https://github.com/SirCmpwn/MCVHost).
